@@ -5,10 +5,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Prism.Mvvm;
 namespace ServiceModule.EventHandlers
 {
-    public class ListenToFileNameEvent
+    public class ListenToFileNameEvent : BindableBase
     {
         IEventAggregator eventAggregator;
         private string fileName;
@@ -16,7 +16,11 @@ namespace ServiceModule.EventHandlers
         public string FileName
         {
             get { return fileName; }
-            set { fileName = value; }
+            set
+            {
+                fileName = value;
+                SetProperty(ref fileName, value);
+            }
         }
 
 

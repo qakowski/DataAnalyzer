@@ -19,6 +19,6 @@
 
         <TextBlock Width="Auto" Grid.Column="0" FontSize="15" Grid.Row="0" VerticalAlignment="Center" Text="{Binding FileName}"/>
         <Button Grid.Column="1" Grid.Row="0" Content="Load File" Command="{Binding LoadFileCommand}"/>
-
+        <DataGrid Grid.Column="0" Grid.Row="1" DataContext="{Binding Messages}" />
     </Grid>
 </UserControl>

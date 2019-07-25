@@ -1,5 +1,4 @@
-﻿using ServiceModule.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ServiceModule.DataAccess.Interfaces
 {
-    public interface IReadFile
+    interface IReadOperationStrategy
     {
-        List<Message> ReadData(string fileName);
+        IReadFile GetReader(string fileName);
     }
 }

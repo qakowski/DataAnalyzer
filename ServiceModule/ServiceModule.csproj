@@ -64,7 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\Implementations\ReadFromTxtFile.cs" />
+    <Compile Include="DataAccess\Implementations\ReadOperationStrategy.cs" />
     <Compile Include="DataAccess\Interfaces\IReadFile.cs" />
+    <Compile Include="DataAccess\Interfaces\IReadOperationStrategy.cs" />
     <Compile Include="EventHandlers\ListenToFileNameEvent.cs" />
     <Compile Include="Model\Message.cs" />
     <Compile Include="ServiceModule.cs" />

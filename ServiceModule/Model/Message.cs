@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ServiceModule.Model
 {
-    class Message 
+    public class Message 
     {
         private int messageId;
 
